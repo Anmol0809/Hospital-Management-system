@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Doctor</title>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 border">
+                    <div class="logo border">
+                        <a href="index.html">
+                           <img src="./BEYOND CARE.jpg" alt="Logo " width="150" height="110">
+                        </a>                                                 
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">Home</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">About</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pages</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Elements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-2" >
+                <div class="header-social text-center">
+                <ul>
+                    <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-search"></i>
+
+                    </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-map-marker"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="col-md-3" >
+                    <a href="javascript:void(0);" class="btn-green mt-20px">
+                        <i class="fa fa-calendar-minus-o"></i> Make a Payment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="banner" style="background-image: url(./homepage\ 3.jpg);">
+        <div class="container">
+          <div class="banner-content">
+          <img src="./png2logo.png" alt="Banner-Logo" >
+          <h1>Our expertise at your service</h1>
+         </div>
+
+         <div class="service">
+            <a href="javascript:void(0);">
+              <div class="service-content">
+                Our Service Providers
+              </div>
+              <div class="service-btn">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+
+              <div class="service-icon">
+                <i class="fa fa-heartbeat "></i>
+              </div>
+            </a>
+         </div>
+        </div>
+    </section>
+
+
+    <script>
+        var header = document.getElementsByTagName("header");
+        window.onscroll = function() {scrolllFunction()};
+
+        function scrolllFunction(){
+            if(document.body.scrollTop> 200 || document.documentElement.scrollTop>200){
+                header[0].setAttribute("class","header-active");
+            }
+            else{
+                header[0].removeAttribute("class")
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
