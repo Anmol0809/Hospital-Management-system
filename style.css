@@ -186,3 +186,15 @@ header{
     height: 180px;
     vertical-align: top;
 }
+
+.service a:last-child{
+    border-right: none;
+    background-image: url(../Hospital\ website/card);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    width: 34.2%
+
+}
