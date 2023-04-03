@@ -178,7 +178,7 @@ header{
     display: inline-block;
     width: 33%;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     border-right: 1px solid #fff;
     padding: 34px 20px;
@@ -189,12 +189,57 @@ header{
 
 .service a:last-child{
     border-right: none;
-    background-image: url(../Hospital\ website/card);
+    background-image: url(/CARD.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
     width: 34.2%
+
+}
+
+.service-content::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: #fff;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.service-content:hover::before{
+    width: 50%;
+}
+
+.service-btn{
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    background: #ffffff45;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.service-btn i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-in-out;
+}
+
+.service a:hover .service-btn i{
+    transform: rotate(-40deg);
+    top: 26%;
+    left: 32%;
+}
+
+.service-icon{
+    font-size: 40px;
+    margin-top: 22px;
 
 }
